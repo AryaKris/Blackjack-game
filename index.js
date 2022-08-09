@@ -4,10 +4,19 @@
 
 // 2. Create a variable, sum, and set it to the sum of the two cards
 
-var firstCard;
-var secondCard;
+let firstCard = 6
+let secondCard = 9
+let sum = firstCard + secondCard
 
-let firstCard = math.random()*11
-let secondCard = math.random() * 11
+let hasblackJack = false
+let message = ""
+message = "Do you want to draw a new card ?🙂 "
+if (sum<=21) {
+    console.log("Do you want to draw a new card?🙂)" 
+} else if (sum===21){
+    console.log("Wohoo!You've got a Blackjack!🥳")
+    hasblackJack = true
+} else {
+    console.log("You're out of the game!😭")
+}
 
-var sum = firstCard + secondCard;
