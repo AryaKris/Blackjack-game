@@ -57,10 +57,10 @@ function renderGame() {
 
 
 function newCard() {
-    // 3. Use the getRandomCard() to set the value of card
-    let card = getRandomCard()
-    sum += card
-    cards.push(card)
-    console.log(cards)
-    renderGame()
+    if (isAlive === true && hasBlackJack === false) {
+        let card = getRandomCard()
+        sum += card
+        cards.push(card)
+        renderGame()
+    }
 }
